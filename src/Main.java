@@ -2,6 +2,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+
 public class Main {
 
     public static void main(String[] args) {
@@ -86,20 +87,7 @@ public class Main {
     }
 
     public static String conversionToRomanNumber(String number) {
-        String romanNumber = null;
-        switch (number) {
-            case "1" -> romanNumber = "I";
-            case "2" -> romanNumber = "II";
-            case "3" -> romanNumber = "III";
-            case "4" -> romanNumber = "IV";
-            case "5" -> romanNumber = "V";
-            case "6" -> romanNumber = "VI";
-            case "7" -> romanNumber = "VII";
-            case "8" -> romanNumber = "VIII";
-            case "9" -> romanNumber = "IX";
-            case "10" -> romanNumber = "X";
-        }
-        return romanNumber;
+       return RomanNumber.conversionToRomanNumber(Integer.parseInt(number));
     }
 
 
